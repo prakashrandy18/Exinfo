@@ -1,0 +1,1 @@
+export const Hero_text = "Exinfo Solutions provides cleints with satisfying eye catching creative exhibition stalls with professional set up"
