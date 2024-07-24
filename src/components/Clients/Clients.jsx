@@ -5,6 +5,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis';
 import Image from 'next/image';
 import styles from './page.module.scss';
+import { isMobile } from 'react-device-detect';
 
 const images = [
   'allure.jpg',
@@ -62,8 +63,13 @@ export default function Clients() {
         <div ref={gallery} className={styles.gallery}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
           <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <Column images={[images[9], images[10], images[11]]} y={y4} />
+
+          {!isMobile && (
+            <Column images={[images[6], images[7], images[8]]} y={y3} />
+          )}
+          {!isMobile && (
+            <Column images={[images[9], images[10], images[11]]} y={y4} />
+          )}
         </div>
         <div className={styles.spacer}></div>
       </main>

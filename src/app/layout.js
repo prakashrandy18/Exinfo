@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body className="grid bg-[#070815] text-white">
         <Header />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

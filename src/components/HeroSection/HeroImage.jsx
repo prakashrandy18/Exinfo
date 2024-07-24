@@ -22,7 +22,7 @@ export default function HeroImage() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '100vw',
+        width: '100%',
         position: 'relative',
       }}
     >
@@ -43,14 +43,12 @@ export default function HeroImage() {
             zIndex: 1,
           }}
         >
-          <div class="w-[450px]">
+          <div class="w-screen">
             <h3 class="text-white text-6xl font-semibold font-sans">
               {Hero_text}
             </h3>
             <p class="mt-6 text-xs text-white font-sans">{Hero_sub_text}</p>
           </div>
-          <SocialMediaLinks />
-
           <button class="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
             Book Now{' '}
             <svg
@@ -77,7 +75,7 @@ export default function HeroImage() {
         variants={imageVariant}
         style={{
           position: 'relative',
-          width: '100vw',
+          width: '100%',
           height: '100vh',
           zIndex: 0,
         }}

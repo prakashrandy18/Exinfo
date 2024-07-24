@@ -20,7 +20,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen">
       <FramerWrapper>
         <HeroImage />
         <Projects />

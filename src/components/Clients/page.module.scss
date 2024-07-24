@@ -42,3 +42,13 @@
 .spacer{
     height: 10vh;
 }
+
+// Mobile Styles
+@media (max-width: 640px) {
+    .gallery {
+        .column {
+            width: 50%; // Change width for mobile
+            min-width: 200px; // Change min-width for mobile
+        }
+    }
+}
