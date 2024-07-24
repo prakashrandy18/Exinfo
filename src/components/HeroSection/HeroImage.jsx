@@ -38,7 +38,7 @@ export default function HeroImage() {
           style={{
             position: 'absolute',
             top: '30%',
-            left: '10%',
+            left: '8%',
             // transform: 'translate(-50%, -50%)',
             zIndex: 1,
           }}
