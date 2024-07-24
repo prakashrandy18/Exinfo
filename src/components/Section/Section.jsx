@@ -9,18 +9,18 @@ export default function Section({ title, children }) {
   };
 
   return (
-    <main className="text-4xl mt-12 mb-4">
+    <>
       {title && (
         <motion.h2
           initial="hidden"
           animate="visible"
           variants={titleVariants}
-          className="text-4xl font-bold text-start ml-14 "
+          className="text-4xl  font-bold text-center ml-14 "
         >
           {title}
         </motion.h2>
       )}
       {children}
-    </main>
+    </>
   );
 }

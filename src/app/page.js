@@ -1,3 +1,4 @@
+import Clients from '@/components/Clients/Clients';
 import FramerWrapper from '@/components/FramerWrapper/FramerWrapper';
 import HeroImage from '@/components/HeroSection/HeroImage';
 import Projects from '@/components/Projects/Projects';
@@ -23,6 +24,7 @@ export default function Home() {
       <FramerWrapper>
         <HeroImage />
         <Projects />
+        <Clients />
       </FramerWrapper>
     </main>
   );
