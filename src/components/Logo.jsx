@@ -1,14 +1,14 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 function Logo() {
   return (
-<Image
+    <Image
       src="/images/Exinfo_logo_white.png"
       alt="Exinfo Logo"
-      width={170}
-      height={36}
+      width={80}
+      height={20}
     />
-  )
+  );
 }
 
-export default Logo
+export default Logo;

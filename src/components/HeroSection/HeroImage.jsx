@@ -3,7 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
-import { Hero_text } from '@/contents/HeroImage';
+import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
+import SocialMediaLinks from '../SocialMedia/SocialMediaLinks';
 
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
@@ -12,7 +13,7 @@ const textVariant = {
 
 const imageVariant = {
   hidden: { opacity: 0 },
-  visible: { opacity: 0.5, transition: { duration: 2 } },
+  visible: { opacity: 1, transition: { duration: 2 } },
 };
 export default function HeroImage() {
   return (
@@ -25,35 +26,59 @@ export default function HeroImage() {
         position: 'relative',
       }}
     >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={textVariant}
-        style={{
-          position: 'absolute',
-          // top: '50%',
-          transform: 'translate(-50%, -50%)',
-          zIndex: 1,
-        }}
+      <Box
+        display={'flex'}
+        flexDirection={'column'}
+        justifyContent={'flex-start'}
       >
-        <Typography
-          sx={{ color: '#fff' }}
-          textAlign={'center'}
-          variant="h4"
-          fontWeight={500}
-          fontFamily={'sans-serif'}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={textVariant}
+          style={{
+            position: 'absolute',
+            top: '30%',
+            left: '10%',
+            // transform: 'translate(-50%, -50%)',
+            zIndex: 1,
+          }}
         >
-          {Hero_text}
-        </Typography>
-      </motion.div>
+          <div class="w-[450px]">
+            <h3 class="text-white text-6xl font-semibold font-sans">
+              {Hero_text}
+            </h3>
+            <p class="mt-6 text-xs text-white font-sans">{Hero_sub_text}</p>
+          </div>
+          <SocialMediaLinks />
+
+          <button class="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            Book Now{' '}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="ml-2 w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </button>
+        </motion.div>
+      </Box>
+
       <motion.div
         initial="hidden"
         animate="visible"
         variants={imageVariant}
         style={{
           position: 'relative',
-          width: '90vw',
-          height: '75vh',
+          width: '100vw',
+          height: '100vh',
           zIndex: 0,
         }}
       >

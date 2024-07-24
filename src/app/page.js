@@ -1,5 +1,6 @@
 import FramerWrapper from '@/components/FramerWrapper/FramerWrapper';
 import HeroImage from '@/components/HeroSection/HeroImage';
+import Projects from '@/components/Projects/Projects';
 
 export async function generateMetadata() {
   return {
@@ -21,6 +22,7 @@ export default function Home() {
     <main>
       <FramerWrapper>
         <HeroImage />
+        <Projects />
       </FramerWrapper>
     </main>
   );
