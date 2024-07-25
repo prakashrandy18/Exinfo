@@ -3,6 +3,7 @@ import './globals.css';
 import { DM_Sans } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       <body className="grid bg-[#070815] text-white">
         <Header />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

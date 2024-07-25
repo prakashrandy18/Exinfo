@@ -8,7 +8,7 @@
         height: 110vh;
 
         .el{
-            width: 115%;
+            width: 100%;
             height: 100%;
             top: 0;
             position: absolute;
@@ -69,6 +69,18 @@
                     width: 15vw;
                     height: 15vh;
                 }
+            }
+        }
+    }
+}
+
+
+// Mobile Styles
+@media (max-width: 640px) {
+    .container {
+        .sticky {
+            .el{
+                width: 115%;
             }
         }
     }
