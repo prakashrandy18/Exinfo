@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Title';
+  src: url('../../public/fonts/Neglige.otf');
+}
+@font-face {
+  font-family: 'Body';
+  src: url('../../public/fonts/NeueMontreal_Medium.otf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +26,7 @@
 }
 
 body {
+  font-family: 'Body';
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

@@ -35,7 +35,7 @@ export default function VedioSection() {
       <div ref={container} className={styles.container}>
         <div ref={stickyMask} className={styles.stickyMask}>
           <video autoPlay muted loop>
-            <source src="/medias/nature.mp4" type="video/mp4" />
+            <source src="/medias/eventVedio.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

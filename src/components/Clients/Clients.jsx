@@ -57,8 +57,8 @@ export default function Clients() {
     };
   }, []);
   return (
-    <Section title="Our Clients">
-      <main>
+    <Section title="Our Team">
+      <div>
         <div className={styles.spacer}></div>
         <div ref={gallery} className={styles.gallery}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -72,7 +72,7 @@ export default function Clients() {
           )}
         </div>
         <div className={styles.spacer}></div>
-      </main>
+      </div>
     </Section>
   );
 }

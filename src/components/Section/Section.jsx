@@ -9,7 +9,7 @@ export default function Section({ title, children }) {
   };
 
   return (
-    <>
+    <div className="mt-16 mb-8">
       {title && (
         <motion.h2
           initial="hidden"
@@ -21,6 +21,6 @@ export default function Section({ title, children }) {
         </motion.h2>
       )}
       {children}
-    </>
+    </div>
   );
 }

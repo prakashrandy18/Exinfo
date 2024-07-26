@@ -2,13 +2,13 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './styles.module.scss';
 import React, { useRef } from 'react';
-import Picture1 from '../../../public/images/projects/image6.jpg';
-import Picture2 from '../../../public/images/projects/image2.jpg';
-import Picture3 from '../../../public/images/projects/image3.jpg';
-import Picture4 from '../../../public/images/projects/image4.jpg';
-import Picture5 from '../../../public/images/projects/image5.jpg';
-import Picture6 from '../../../public/images/projects/image1.jpg';
-import Picture7 from '../../../public/images/projects/image7.jpg';
+import Picture1 from '../../../public/images/recent-projects/image-3.jpeg';
+import Picture2 from '../../../public/images/recent-projects/image-4.jpeg';
+import Picture3 from '../../../public/images/recent-projects/image-5.jpeg';
+import Picture4 from '../../../public/images/recent-projects/image-6.jpeg';
+import Picture5 from '../../../public/images/recent-projects/image-7.jpeg';
+import Picture6 from '../../../public/images/recent-projects/image-8.jpeg';
+import Picture7 from '../../../public/images/recent-projects/image-10.jpeg';
 import Image from 'next/image';
 
 export default function ZoomParallax() {

@@ -4,6 +4,7 @@ import HeroImage from '@/components/HeroSection/HeroImage';
 import About from '@/components/HomePage/About/About';
 import BrandsSlider from '@/components/HomePage/BrandsSlider/BrandsSlider';
 import MetricsSection from '@/components/HomePage/MetricsSection/MetricsSection';
+import RecentProjects from '@/components/HomePage/RecentProjects/RecentProjects';
 import Projects from '@/components/Projects/Projects';
 import VedioSection from '@/components/VedioSection/VedioSection';
 
@@ -29,10 +30,11 @@ export default function Home() {
         <HeroImage />
         <VedioSection />
         <About />
-        <Projects />
+        <RecentProjects />
         <MetricsSection />
-        {/* <Clients /> */}
+        <Projects />
         <BrandsSlider />
+        <Clients />
       </FramerWrapper>
     </main>
   );
