@@ -15,7 +15,7 @@ export default function Section({ title, children }) {
           initial="hidden"
           animate="visible"
           variants={titleVariants}
-          className="text-4xl  font-bold text-center ml-14 "
+          className="text-4xl  font-bold text-center ml-14 mt-8 mb-8"
         >
           {title}
         </motion.h2>

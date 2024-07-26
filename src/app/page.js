@@ -1,6 +1,7 @@
 import Clients from '@/components/Clients/Clients';
 import FramerWrapper from '@/components/FramerWrapper/FramerWrapper';
 import HeroImage from '@/components/HeroSection/HeroImage';
+import About from '@/components/HomePage/About/About';
 import BrandsSlider from '@/components/HomePage/BrandsSlider/BrandsSlider';
 import Projects from '@/components/Projects/Projects';
 import VedioSection from '@/components/VedioSection/VedioSection';
@@ -26,8 +27,9 @@ export default function Home() {
       <FramerWrapper>
         <HeroImage />
         <VedioSection />
+        <About />
         <Projects />
-        <Clients />
+        {/* <Clients /> */}
         <BrandsSlider />
       </FramerWrapper>
     </main>
