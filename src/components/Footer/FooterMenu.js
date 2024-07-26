@@ -6,29 +6,23 @@ import {
   logoInstagram,
 } from 'ionicons/icons';
 export const QUICK_LINKS = [
-  { name: 'Drag And Drop', link: '#' },
-  { name: 'Visual Studio X', link: '#' },
-  { name: 'Easy Content', link: '#' },
+  { name: 'Home', link: '#' },
+  { name: 'About Us', link: '#' },
+  { name: 'Our Team', link: '#' },
+  { name: 'Contact Us', link: '#' },
+];
+
+export const CONTACT_INFO = [
+  { name: 'sri@exinfo.in', link: '#' },
+  { name: '+91 9600127232 ', link: '#' },
 ];
 export const ADDRESS = [
-  { name: 'Industries and tools', link: '#' },
-  { name: 'Use cases', link: '#' },
-  { name: 'Blog', link: '#' },
-  { name: 'Online evenet', link: '#' },
-  { name: 'Nostrud exercitation', link: '#' },
-];
-export const CONTACT_INFO = [
-  { name: 'Diversity & inclusion', link: '#' },
-  { name: 'About us', link: '#' },
-  { name: 'Press', link: '#' },
-  { name: 'Customer Stories', link: '#' },
-  { name: 'Online communities', link: '#' },
-];
-export const SUPPORT = [
-  { name: 'Documentation', link: '#' },
-  { name: 'Tutorials & guides', link: '#' },
-  { name: 'Webinars', link: '#' },
-  { name: 'Open-source', link: '#' },
+  { name: 'sri@exinfo.in', link: '#' },
+  { name: '+91 9600127232 ', link: '#' },
+  {
+    name: 'No 1/18, Sivaramaiyyar Street, Chettiyaragaram Main road, Vanagaram, Chennai Tamil Nadu 600095',
+    link: '#',
+  },
 ];
 
 export const Icons = [
