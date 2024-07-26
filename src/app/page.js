@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <FramerWrapper>
         <HeroImage />
-        {/* <VedioSection /> */}
+        <VedioSection />
         <Projects />
         <Clients />
         <BrandsSlider />

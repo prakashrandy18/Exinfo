@@ -12,12 +12,10 @@ export default function VedioSection() {
   let easedScrollProgress = 0;
 
   useEffect(() => {
-    console.log('asdfas');
     requestAnimationFrame(animate);
   }, []);
 
   const animate = () => {
-    console.log('helo');
     const maskSizeProgress = targetMaskSize * getScrollProgress();
     stickyMask.current.style.webkitMaskSize =
       (initialMaskSize + maskSizeProgress) * 100 + '%';
