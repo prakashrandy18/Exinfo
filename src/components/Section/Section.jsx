@@ -9,7 +9,7 @@ export default function Section({ title, children }) {
   };
 
   return (
-    <div className="mt-16 mb-8">
+    <div className="pt-16 pb-8">
       {title && (
         <motion.h2
           initial="hidden"

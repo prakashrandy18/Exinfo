@@ -43,7 +43,7 @@ export default function HeroImage() {
             zIndex: 1,
           }}
         >
-          <div class="w-screen">
+          <div>
             <h3 class="text-white text-6xl font-semibold font-sans">
               {Hero_text}
             </h3>

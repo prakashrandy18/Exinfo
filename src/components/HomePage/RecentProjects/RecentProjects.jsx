@@ -28,7 +28,7 @@ export default function RecentProjects() {
   });
   return (
     <Section title="Recent Projects">
-      <main ref={container} className={styles.main}>
+      <main className="sm:m-12" ref={container}>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (

@@ -1,3 +1,4 @@
+'use client';
 import Logo from '../Logo';
 import { QUICK_LINKS, ADDRESS, CONTACT_INFO, SUPPORT } from './FooterMenu';
 import Item from './Item';

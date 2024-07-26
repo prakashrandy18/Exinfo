@@ -18,11 +18,11 @@ export default async function Footer() {
   }, []);
   return (
     <div
-      className="relative h-[357px]"
-      style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
+      className="relative h-[357px] sm:h-[766px]"
+      style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
     >
-      <div className="relative h-[calc(100vh+357px)] -top-[100vh]">
-        <div className="h-[357px] sticky top-[calc(100vh-357px)]">
+      <div className="relative h-[calc(100vh+357px)] sm:h-[calc(100vh+766px)] -top-[100vh]">
+        <div className="h-[357px] sm:h-[766px] sticky top-[calc(100vh-357px)] sm:top-[calc(100vh-766px)]">
           <footer className="bg-gray-900 text-white">
             <FooterItems />
             <div

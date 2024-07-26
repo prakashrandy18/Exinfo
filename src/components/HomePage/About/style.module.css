@@ -13,6 +13,8 @@
     gap: 5%;
 }
 
+
+
 .imageContainer{
     position: relative;
     height: 100%;
@@ -33,4 +35,20 @@
 .column:last-of-type{
     align-items: flex-end;
     font-size: 1vw;
+}
+
+
+@media (max-width: 768px) { /* Adjust the max-width value as needed for your breakpoint */
+    .projectDescription {
+        gap: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.imageContainer{
+    position: relative;
+    /* height: 250px; */
+    width: 100%;
+}
 }

@@ -46,7 +46,7 @@ function About() {
               priority={true}
             />
           </motion.div>
-          <div className="w-1/2 flex flex-col">
+          <div className="sm:w-auto md:w-1/2 flex flex-col">
             <div ref={description} className={styles.description}>
               <div className={styles.body}>
                 <p>

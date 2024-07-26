@@ -10,7 +10,7 @@ export const projects = [
   {
     title: 'Rupay Credit',
     description:
-      'RuPay, launched by NPCI in 2012, is India’s domestic payment card network designed to offer an alternative to international networks like Visa and MasterCard. It provides a range of cards, including debit, credit, and prepaid, with lower transaction fees and a focus on affordability. Integrated with systems like UPI and NEFT, RuPay ensures secure and efficient transactions. It plays a significant role in government subsidies and welfare schemes and is expanding its global reach through international partnerships.',
+      'RuPay, launched by NPCI in 2012, is India’s domestic payment card network designed to offer an alternative to international networks like Visa and MasterCard. It provides a range of cards, including debit, credit, and prepaid, with lower transaction fees and a focus on affordability.  RuPay ensures secure and efficient transactions. It plays a significant role in government subsidies and welfare schemes and is expanding its global reach through international partnerships.',
     src: 'image2.jpeg',
     link: '#',
     color: '#977F6D',
@@ -34,7 +34,7 @@ export const projects = [
   {
     title: 'ZOHO',
     description:
-      'Zoho Corporation offers a comprehensive suite of cloud-based software solutions, including CRM, ERP, finance, HR, and collaboration tools. Their applications are designed for seamless access and integration across devices, with high customization options to meet diverse business needs. Zoho’s solutions are known for their affordability and serve a global customer base, providing support and services worldwide. The company focuses on empowering businesses with integrated and scalable tools to enhance productivity and streamline operations.',
+      'Zoho Corporation offers a comprehensive suite of cloud-based software solutions. Their applications are designed for seamless access and integration across devices, with high customization options to meet diverse business needs. Zoho’s solutions are known for their affordability and serve a global customer base, providing support and services worldwide. The company focuses on empowering businesses with integrated and scalable tools to enhance productivity and streamline operations.',
     src: 'image5.jpeg',
     link: '#',
     color: '#88A28D',

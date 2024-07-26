@@ -28,7 +28,7 @@ const MetricsSection = () => {
   return (
     <section className="flex flex-col items-center py-12 bg-gray-100">
       <div className="text-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 m-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 m-4">
           {metrics.map((metric, index) => (
             // <div
             //   key={index}
