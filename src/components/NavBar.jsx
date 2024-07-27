@@ -8,6 +8,7 @@ import clsx from 'clsx';
 import getNavLinks from '@/lib/get-nav-links';
 import { motion } from 'framer-motion';
 import NavLinks from './Header/NavLinks';
+import { isMobile } from 'react-device-detect';
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,6 @@ function NavBar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="z-50" onClick={() => setOpen(false)}>
             <Logo />
-            <span className="sr-only">Glisten.ai Home Page</span>
           </Link>
           <button
             type="button"
@@ -28,7 +28,6 @@ function NavBar() {
             onClick={() => setOpen(true)}
           >
             <MdMenu />
-            <span className="sr-only">Open menu</span>
           </button>
         </div>
         {/* Mobile Nav */}
@@ -65,12 +64,14 @@ function NavBar() {
                 </Link>
               </Fragment>
             ))}
+            {/* <NavLinks /> */}
           </div>
         </div>
 
         {/* Desktop Nav */}
-        <ul className=" hidden gap-6 md:flex">
-          {/* {navLinks?.map((item) => (
+        {!isMobile && (
+          <ul className="sm:hidden md:flex gap-6">
+            {/* {navLinks?.map((item) => (
             <Fragment key={item.label}>
               <div className="relative group">
                 <Link
@@ -127,8 +128,9 @@ function NavBar() {
               </div>
             </Fragment>
           ))} */}
-          {/* <NavLinks /> */}
-        </ul>
+            <NavLinks />
+          </ul>
+        )}
       </div>
     </nav>
   );
