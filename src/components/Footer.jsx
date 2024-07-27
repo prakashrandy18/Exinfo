@@ -5,7 +5,7 @@ import { Icons } from './Footer/FooterMenu';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 
-export default async function Footer() {
+export default function Footer() {
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -18,7 +18,7 @@ export default async function Footer() {
   }, []);
   return (
     <div
-      className="relative sm:h-[766px] md:h-[357px]"
+      className="relative  sm:h-[766px] md:h-[357px]"
       style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
     >
       <div className="relative  sm:h-[calc(100vh+766px)] md:h-[calc(100vh+357px)] -top-[100vh]">

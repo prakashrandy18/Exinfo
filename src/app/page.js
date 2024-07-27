@@ -7,6 +7,7 @@ import MetricsSection from '@/components/HomePage/MetricsSection/MetricsSection'
 import RecentProjects from '@/components/HomePage/RecentProjects/RecentProjects';
 import Projects from '@/components/Projects/Projects';
 import VedioSection from '@/components/VedioSection/VedioSection';
+import { isMobile } from 'react-device-detect';
 
 export async function generateMetadata() {
   return {
@@ -32,7 +33,7 @@ export default function Home() {
         <About />
         <RecentProjects />
         <MetricsSection />
-        <Projects />
+        {!isMobile && <Projects />}
         <BrandsSlider />
         <Clients />
       </FramerWrapper>
