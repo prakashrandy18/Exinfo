@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
-import SocialMediaLinks from '../SocialMedia/SocialMediaLinks';
 import { CarouselPlugin } from './CarouselPlugin';
-import { Button } from '../ui/button';
 
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
