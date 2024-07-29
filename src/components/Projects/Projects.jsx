@@ -17,7 +17,7 @@ export default function Projects() {
   }, []);
   return (
     <main className="text-4xl w-screen">
-      <Section title="Our Gallery ">
+      <Section title="Our Gallery" titleClassName="mb-0">
         <ZoomParallax />
       </Section>
     </main>

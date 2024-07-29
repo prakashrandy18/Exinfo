@@ -4,22 +4,22 @@
 
 .container{
   position: relative;
-  height: 300vh;
+  // height: 300vh;
   background-color: rgb(255, 255, 255);
 }
 
 .stickyMask{
-  display: flex;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  mask-image: url('/medias/mask.svg');
-  mask-position: 52.35% center;
-  mask-repeat: no-repeat;
-  mask-size: 80%;
+  // display: flex;
+  // overflow: hidden;
+  // position: sticky;
+  // top: 0;
+  // height: 100vh;
+  // align-items: center;
+  // justify-content: center;
+  // mask-image: url('/medias/mask.svg');
+  // mask-position: 52.35% center;
+  // mask-repeat: no-repeat;
+  // mask-size: 80%;
 }
 
 .stickyMask video{

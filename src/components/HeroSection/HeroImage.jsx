@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
 import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
 import SocialMediaLinks from '../SocialMedia/SocialMediaLinks';
+import { CarouselPlugin } from './CarouselPlugin';
+import { Button } from '../UI/button';
 
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
@@ -15,6 +17,14 @@ const imageVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 2 } },
 };
+
+const images = [
+  { src: 'hero1.jpg' },
+  { src: 'hero2.jpg' },
+  { src: 'hero3.jpg' },
+  { src: 'hero4.jpg' },
+  { src: 'hero5.jpg' },
+];
 export default function HeroImage() {
   return (
     <Box
@@ -68,8 +78,11 @@ export default function HeroImage() {
           </button>
         </motion.div>
       </Box>
+      <div className="w-full h-screen relative">
+        <CarouselPlugin data={images} />
+      </div>
 
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         animate="visible"
         variants={imageVariant}
@@ -79,15 +92,8 @@ export default function HeroImage() {
           height: '100vh',
           zIndex: 0,
         }}
-      >
-        <Image
-          src="/images/hero-1.jpg"
-          alt="Next.js Logo"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </motion.div>
+      > */}
+      {/* </motion.div> */}
     </Box>
   );
 }

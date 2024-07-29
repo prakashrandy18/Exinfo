@@ -7,8 +7,10 @@ import {
 } from 'ionicons/icons';
 export const QUICK_LINKS = [
   { name: 'Home', link: '#' },
-  { name: 'About Us', link: '#' },
-  { name: 'Our Team', link: '#' },
+  { name: 'Who We Are', link: '#' },
+  { name: 'What We Serve', link: '#' },
+  { name: 'Our Clients', link: '#' },
+  { name: 'Join Our Team', link: '#' },
   { name: 'Contact Us', link: '#' },
 ];
 

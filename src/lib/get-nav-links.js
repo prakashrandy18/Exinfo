@@ -37,10 +37,6 @@ export default function getNavLinks() {
       label: 'Our Clients',
       link: '/clients',
     },
-    // {
-    //   label: 'Customer Speaks',
-    //   link: '/customers',
-    // },
     {
       label: 'Join our Team',
       link: '/team',

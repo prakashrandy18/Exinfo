@@ -30,7 +30,7 @@ function About() {
   const isInView = useInView(description);
   const isInViewImage = useInView(imageContainer);
   return (
-    <Section title={'About Us'}>
+    <Section title={'About Us'} className="bg-gray-100 text-gray-900">
       <div ref={container} className={otherstyles.projects}>
         <div className={otherstyles.projectDescription}>
           <motion.div
@@ -67,14 +67,30 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="mt-12">
-              <motion.button
+            <div className="mt-4">
+              {/* <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
-              >
+                // className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
+              > */}
+              <button class="mt-8 px-6 py-2 border border-#1f2937 text-#1f2937 font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 hover:bg-#1f2937 flex items-center justify-center">
                 About us
-              </motion.button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="ml-2 w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </button>
+              {/* </motion.div> */}
             </div>
           </div>
         </div>

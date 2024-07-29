@@ -30,7 +30,7 @@ export default function Footer() {
       text-center pt-2 text-gray-400 text-sm pb-8"
             >
               <span className="flex  items-end ml-8">
-                © 2020 Appy. All rights reserved.
+                © Copyright @ Paul's Digital Media
               </span>
               <span className="flex items-end ml-8">
                 Terms · Privacy Policy
