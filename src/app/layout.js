@@ -2,12 +2,10 @@ import './globals.css';
 import { DM_Sans } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Head from 'next/head';
 
 import { Inter as FontSans } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 import ScrollToTopButton from '@/components/ui/scrollToTopButton';
 
 const fontSans = FontSans({
