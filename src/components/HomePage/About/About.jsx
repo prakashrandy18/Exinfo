@@ -8,7 +8,6 @@ import { useInView, motion } from 'framer-motion';
 import { slideUp, opacity, combinedVariants } from './animation';
 
 import styles from './style.module.scss';
-import Rounded from '@/components/ui/RoundedButton/RoundedButton';
 
 const phrase = `Exinfo Solutions is an abode of creations, with a dedicated brain storming professionals
 delivering an exceptional exhibition experience globally.

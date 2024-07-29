@@ -1,9 +1,8 @@
 // components/MetricsSection.js
 'use client';
-import Section from '@/components/Section/Section';
-import AnimatedCounter from '@/components/ui/AnimatedCounter/AnimatedCounter';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import AnimatedCounter from '@/components/ui/AnimatedCounter/AnimatedCounter';
 const MetricsSection = () => {
   const metrics = [
     { label: 'Total Events Organized', value: 5000 },
