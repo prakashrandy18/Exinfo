@@ -1,6 +1,5 @@
 'use client';
 import { useRef, useState } from 'react';
-import Section from '@/components/Section/Section';
 
 import otherstyles from './style.module.css';
 import Image from 'next/image';
@@ -8,6 +7,7 @@ import { useInView, motion } from 'framer-motion';
 import { slideUp, opacity, combinedVariants } from './animation';
 
 import styles from './style.module.scss';
+import Section from '@/components/Section/Section';
 
 const phrase = `Exinfo Solutions is an abode of creations, with a dedicated brain storming professionals
 delivering an exceptional exhibition experience globally.
