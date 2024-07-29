@@ -61,9 +61,12 @@ export default function Clients() {
       <div>
         <div className={styles.spacer}></div>
         <div ref={gallery} className={styles.gallery}>
-          <Column images={[images[0], images[1], images[2], images[9]]} y={y} />
           <Column
-            images={[images[3], images[4], images[5], images[10]]}
+            images={[images[0], images[1], images[2], images[9], images[11]]}
+            y={y}
+          />
+          <Column
+            images={[images[3], images[4], images[5], images[10], images[6]]}
             y={y2}
           />
 
@@ -77,7 +80,7 @@ export default function Clients() {
             <Column images={[images[9], images[10], images[11]]} y={y4} />
           )}
         </div>
-        <div className={styles.spacer}></div>
+        {!isMobile && <div className={styles.spacer}></div>}
       </div>
     </Section>
   );

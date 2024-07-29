@@ -27,8 +27,8 @@ export default function RecentProjects() {
     requestAnimationFrame(raf);
   });
   return (
-    <Section title="Recent Projects" className={'bg-gray-900 text-gray-100'}>
-      <main className="p-8 pt-0" ref={container}>
+    <Section title="Recent Projects">
+      <main className="p-12" ref={container}>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
