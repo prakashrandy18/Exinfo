@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import Fade from 'embla-carousel-fade';
-import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
-import { Card, CardContent } from '../ui/card';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel.jsx';
+import { Card, CardContent } from '../ui/card.jsx';
 
 export function CarouselPlugin({ data = [] }) {
   const plugin = React.useRef([
