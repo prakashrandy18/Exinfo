@@ -6,7 +6,7 @@ import { Box, Typography } from '@mui/material';
 import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
 import SocialMediaLinks from '../SocialMedia/SocialMediaLinks';
 import { CarouselPlugin } from './CarouselPlugin';
-import { Button } from '../UI/button';
+import { Button } from '../ui/button';
 
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
@@ -54,24 +54,24 @@ export default function HeroImage() {
           }}
         >
           <div>
-            <h3 class="text-white text-6xl font-semibold font-sans">
+            <h3 className="text-white text-6xl font-semibold font-sans">
               {Hero_text}
             </h3>
-            <p class="mt-6 text-xs text-white font-sans">{Hero_sub_text}</p>
+            <p className="mt-6 text-xs text-white font-sans">{Hero_sub_text}</p>
           </div>
-          <button class="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+          <button className="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
             Book Now{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="ml-2 w-6 h-6"
+              className="ml-2 w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
               />
             </svg>

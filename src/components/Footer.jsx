@@ -21,7 +21,7 @@ export default function Footer() {
       className="relative  sm:h-[766px] md:h-[357px]"
       style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}
     >
-      <div className="relative  sm:h-[calc(100vh+766px)] md:h-[calc(100vh+357px)] -top-[100vh]">
+      <div className="relative  sm:h-[calc(100vh+766px)] md:h-[calc(100vh+357px)] md:top-[100vh]">
         <div className="sm:h-[766px] md:h-[357px] sticky sm:top-[calc(100vh-766px)] md:top-[calc(100vh-357px)]">
           <footer className="bg-gray-900 text-white">
             <FooterItems />

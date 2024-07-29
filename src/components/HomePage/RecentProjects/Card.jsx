@@ -38,19 +38,19 @@ const Card = ({
         <div className={styles.body}>
           <div className={styles.description}>
             <p>{description}</p>
-            <button class="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <button className="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
               See more{' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
-                class="ml-2 w-6 h-6"
+                className="ml-2 w-6 h-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>

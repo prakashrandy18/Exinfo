@@ -7,8 +7,8 @@ import Head from 'next/head';
 import { Inter as FontSans } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/UI/button';
-import ScrollToTopButton from '@/components/UI/scrollToTopButton';
+import { Button } from '@/components/ui/button';
+import ScrollToTopButton from '@/components/ui/scrollToTopButton';
 
 const fontSans = FontSans({
   subsets: ['latin'],

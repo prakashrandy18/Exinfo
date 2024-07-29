@@ -39,9 +39,6 @@ export function CarouselPlugin({ data = [] }) {
                       objectFit: 'cover',
                     }}
                     alt="Next.js Logo"
-                    layout="fill"
-                    objectFit="cover"
-                    priority
                   />
                   {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
                 </CardContent>

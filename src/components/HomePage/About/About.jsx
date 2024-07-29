@@ -8,7 +8,7 @@ import { useInView, motion } from 'framer-motion';
 import { slideUp, opacity, combinedVariants } from './animation';
 
 import styles from './style.module.scss';
-import Rounded from '@/components/UI/RoundedButton/RoundedButton';
+import Rounded from '@/components/ui/RoundedButton/RoundedButton';
 
 const phrase = `Exinfo Solutions is an abode of creations, with a dedicated brain storming professionals
 delivering an exceptional exhibition experience globally.
@@ -73,19 +73,19 @@ function About() {
                 whileTap={{ scale: 0.9 }}
                 // className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
               > */}
-              <button class="mt-8 px-6 py-2 border border-#1f2937 text-#1f2937 font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 hover:bg-#1f2937 flex items-center justify-center">
+              <button className="mt-8 px-6 py-2 border border-#1f2937 text-#1f2937 font-semibold rounded hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 hover:bg-#1f2937 flex items-center justify-center">
                 About us
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
-                  class="ml-2 w-6 h-6"
+                  className="ml-2 w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                   />
                 </svg>

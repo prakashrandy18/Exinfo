@@ -9,6 +9,8 @@ import Picture4 from '../../../public/images/recent-projects/image-6.jpeg';
 import Picture5 from '../../../public/images/recent-projects/image-7.jpeg';
 import Picture6 from '../../../public/images/recent-projects/image-8.jpeg';
 import Picture7 from '../../../public/images/recent-projects/image-10.jpeg';
+import Picture8 from '../../../public/images/recent-projects/image-10.jpeg';
+import Picture9 from '../../../public/images/recent-projects/image-10.jpeg';
 import Image from 'next/image';
 
 export default function ZoomParallax() {
@@ -60,6 +62,14 @@ export default function ZoomParallax() {
     {
       src: Picture7,
       scale: scale9,
+    },
+    {
+      src: Picture8,
+      scale: scale5, // Added new image
+    },
+    {
+      src: Picture9,
+      scale: scale6, // Added new image
     },
   ];
 

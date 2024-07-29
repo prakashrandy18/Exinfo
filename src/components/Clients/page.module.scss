@@ -10,8 +10,8 @@
     .column{
         position: relative;
         height: 100%;
-        width: 25%;
-        min-width: 250px;
+        width: 20%;
+        min-width: 150px;
         display: flex;
         flex-direction: column;
         gap: 2vw;
@@ -35,7 +35,10 @@
             top: -45%;
         }
         &:nth-of-type(4){
-            top: -75%;
+            top: -65%;
+        }
+        &:nth-of-type(5){
+            top: -80%;
         }
     }
 }
@@ -46,9 +49,21 @@
 // Mobile Styles
 @media (max-width: 640px) {
     .gallery {
+        height: 100vh;
+        position: relative;
         .column {
+            height: 100%;
             width: 50%; // Change width for mobile
-            min-width: 200px; // Change min-width for mobile
+            min-width: 150px; // Change min-width for mobile
+            &:nth-of-type(1){
+                top: -60%;
+            }
+            &:nth-of-type(2){
+                top:-70%;
+            }
         }
+    }
+    .spacer{
+        height: 10%;
     }
 }

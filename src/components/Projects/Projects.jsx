@@ -16,8 +16,8 @@ export default function Projects() {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <main className="text-4xl w-screen">
-      <Section title="Our Gallery" titleClassName="mb-0">
+    <main className="text-4xl">
+      <Section title="Our Team" titleClassName="mb-0">
         <ZoomParallax />
       </Section>
     </main>

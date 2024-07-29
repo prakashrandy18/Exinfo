@@ -1,7 +1,7 @@
 // components/MetricsSection.js
 'use client';
 import Section from '@/components/Section/Section';
-import AnimatedCounter from '@/components/UI/AnimatedCounter/AnimatedCounter';
+import AnimatedCounter from '@/components/ui/AnimatedCounter/AnimatedCounter';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 const MetricsSection = () => {
@@ -35,6 +35,7 @@ const MetricsSection = () => {
             //   className="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:shadow-lg hover:scale-105"
             // >
             <motion.div
+              key={index}
               className="bg-white p-6 rounded-lg shadow-md"
               whileHover={{
                 scale: 1.05,
