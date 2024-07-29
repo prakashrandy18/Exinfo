@@ -1,11 +1,12 @@
+'use client';
 import React from 'react';
-import NavBar from './NavBar';
 import HeroImage from './HeroSection/HeroImage';
+import Navbar from './Header/NavBar';
 
 function Header() {
   return (
     <header>
-      <NavBar />
+      <Navbar />
     </header>
   );
 }

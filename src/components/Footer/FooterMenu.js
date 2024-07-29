@@ -30,7 +30,7 @@ export const ADDRESS = [
 export const Icons = [
   { name: logoFacebook, link: '#' },
   { name: logoTwitter, link: '#' },
-  { name: logoGithub, link: '#' },
-  { name: logoLinkedin, link: '#' },
+  // { name: logoGithub, link: '#' },
+  // { name: logoLinkedin, link: '#' },
   { name: logoInstagram, link: '#' },
 ];
