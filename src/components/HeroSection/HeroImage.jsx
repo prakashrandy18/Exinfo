@@ -2,8 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Box } from '@mui/material';
-import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
 import { CarouselPlugin } from './CarouselPlugin';
+import { Hero_sub_text, Hero_text } from '@/contents/HeroImage';
 
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
