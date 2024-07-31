@@ -57,32 +57,34 @@ export default function Clients() {
     };
   }, []);
   return (
-    <Section title="Our Gallery" titleClassName="sm:mb-8 md:mb-0">
-      <div>
-        <div className={styles.spacer}></div>
-        <div ref={gallery} className={styles.gallery}>
-          <Column
-            images={[images[0], images[1], images[2], images[9], images[11]]}
-            y={y}
-          />
-          <Column
-            images={[images[3], images[4], images[5], images[10], images[6]]}
-            y={y2}
-          />
+    !isMobile && (
+      <Section title="Our Gallery" titleClassName="sm:mb-8 md:mb-0">
+        <div>
+          <div className={styles.spacer}></div>
+          <div ref={gallery} className={styles.gallery}>
+            <Column
+              images={[images[0], images[1], images[2], images[9], images[11]]}
+              y={y}
+            />
+            <Column
+              images={[images[3], images[4], images[5], images[10], images[6]]}
+              y={y2}
+            />
 
-          {!isMobile && (
-            <Column images={[images[6], images[7], images[8]]} y={y3} />
-          )}
-          {!isMobile && (
-            <Column images={[images[9], images[10], images[11]]} y={y4} />
-          )}
-          {!isMobile && (
-            <Column images={[images[9], images[10], images[11]]} y={y4} />
-          )}
+            {!isMobile && (
+              <Column images={[images[6], images[7], images[8]]} y={y3} />
+            )}
+            {!isMobile && (
+              <Column images={[images[9], images[10], images[11]]} y={y4} />
+            )}
+            {!isMobile && (
+              <Column images={[images[9], images[10], images[11]]} y={y4} />
+            )}
+          </div>
+          {!isMobile && <div className={styles.spacer}></div>}
         </div>
-        {!isMobile && <div className={styles.spacer}></div>}
-      </div>
-    </Section>
+      </Section>
+    )
   );
 }
 
