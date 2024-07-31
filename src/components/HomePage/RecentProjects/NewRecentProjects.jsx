@@ -155,7 +155,7 @@ function NewRecentProjects() {
           </div>
 
           <div className={styles.thumbnail} ref={thumbnailBorderRef}>
-            {thumbnails?.map((item, index) => (
+            {/* {thumbnails?.map((item, index) => (
               <div key={index} className={styles.thumbnail_item}>
                 <img src={`/images/recent-projects/${item.src}`} />
                 <div className={styles.thumbnail_content}>
@@ -169,7 +169,7 @@ function NewRecentProjects() {
                   )}
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
           <div className={styles.arrows}>
             <button id="prev" ref={prevRef}>

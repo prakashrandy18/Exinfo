@@ -11,7 +11,7 @@ import Card from './Card';
 
 export default function RecentProjects() {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll({
+  const { scrollXProgress } = useScroll({
     target: container,
     offset: ['start start', 'end end'],
   });
@@ -36,7 +36,7 @@ export default function RecentProjects() {
               key={`p_${i}`}
               i={i}
               {...project}
-              progress={scrollYProgress}
+              progress={scrollXProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
             />

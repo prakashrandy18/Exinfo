@@ -5,6 +5,7 @@ import About from '@/components/HomePage/About/About';
 import BrandsSlider from '@/components/HomePage/BrandsSlider/BrandsSlider';
 import MetricsSection from '@/components/HomePage/MetricsSection/MetricsSection';
 import NewRecentProjects from '@/components/HomePage/RecentProjects/NewRecentProjects';
+import ParallexRecentProjects from '@/components/HomePage/RecentProjects/ParallexRecentProjects';
 import RecentProjects from '@/components/HomePage/RecentProjects/RecentProjects';
 import Projects from '@/components/Projects/Projects';
 import VedioSection from '@/components/VedioSection/VedioSection';
@@ -33,10 +34,12 @@ export default function Home() {
         {/* <VedioSection /> */}
         <About />
         <NewRecentProjects />
+        {/* <ParallexRecentProjects />
+        <RecentProjects /> */}
         <MetricsSection />
         {!isMobile && <Projects />}
         <BrandsSlider />
-        <Clients />
+        {!isMobile && <Clients />}
       </FramerWrapper>
     </main>
   );

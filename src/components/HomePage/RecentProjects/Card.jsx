@@ -16,12 +16,12 @@ const Card = ({
   targetScale,
 }) => {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll({
+  const { scrollXProgress } = useScroll({
     target: container,
     offset: ['start end', 'start start'],
   });
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  const imageScale = useTransform(scrollXProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (

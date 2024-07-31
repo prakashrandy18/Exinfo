@@ -142,7 +142,7 @@ export default function Example() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <a href="tel:+919600127232" className="flex items-center">
-              <FaPhone className="mr-2" /> +91 9600127232
+              <FaPhone className="mr-2 rotate-90" /> +91 9600127232
             </a>
           </div>
           <div className="flex items-center space-x-6">
@@ -160,7 +160,7 @@ export default function Example() {
       </div>
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
