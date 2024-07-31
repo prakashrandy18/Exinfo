@@ -64,19 +64,22 @@ function NewRecentProjects() {
 
     const showSlider = (type) => {
       const sliderItemsDom = sliderDom.querySelectorAll(` .${styles.item}`);
-      const thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(
+      const thumbnailItemsDom = thumbnailBorderDom?.querySelectorAll(
         ` .${styles.thumbnail_item}`,
       );
 
       if (type === 'next') {
         sliderDom.appendChild(sliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        thumbnailBorderDom &&
+          thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+
         carouselDom.classList.add(styles.next);
       } else {
         sliderDom.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(
-          thumbnailItemsDom[thumbnailItemsDom.length - 1],
-        );
+        thumbnailBorderDom &&
+          thumbnailBorderDom.prepend(
+            thumbnailItemsDom[thumbnailItemsDom.length - 1],
+          );
         carouselDom.classList.add(styles.prev);
       }
 
@@ -154,8 +157,8 @@ function NewRecentProjects() {
             ))}
           </div>
 
-          <div className={styles.thumbnail} ref={thumbnailBorderRef}>
-            {/* {thumbnails?.map((item, index) => (
+          {/* <div className={styles.thumbnail} ref={thumbnailBorderRef}> */}
+          {/* {thumbnails?.map((item, index) => (
               <div key={index} className={styles.thumbnail_item}>
                 <img src={`/images/recent-projects/${item.src}`} />
                 <div className={styles.thumbnail_content}>
@@ -170,7 +173,7 @@ function NewRecentProjects() {
                 </div>
               </div>
             ))} */}
-          </div>
+          {/* </div> */}
           <div className={styles.arrows}>
             <button id="prev" ref={prevRef}>
               {'<'}
