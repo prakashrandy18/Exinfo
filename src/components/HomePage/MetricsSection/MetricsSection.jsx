@@ -29,7 +29,7 @@ const AnimatedCounter = ({ endValue, duration = 1 }) => {
   return (
     <motion.div
       ref={ref}
-      className="text-3xl font-bold text-blue-600"
+      className="text-3xl font-medium text-gray-900"
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
       transition={{ duration: 0.5 }}
@@ -70,7 +70,7 @@ const MetricsSection = () => {
             // >
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-gray-100 p-6 rounded-lg shadow-md"
               whileHover={{
                 scale: 1.05,
                 rotate: 1,
@@ -78,9 +78,9 @@ const MetricsSection = () => {
               }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+              <h6 className="text-lg font-semibold text-gray-900 mb-2">
                 {metric.label}
-              </h3>
+              </h6>
               <AnimatedCounter endValue={metric.value} duration={2} />
             </motion.div>
             // </div>

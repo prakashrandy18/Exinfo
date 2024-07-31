@@ -173,9 +173,42 @@ const CardContent = React.forwardRef(({ className, ...props }, ref) => (
 
 export function CarouselPlugin({ data = [] }) {
   const plugin = React.useRef([
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: false }),
     Fade(),
   ]);
+
+  const videoRef = React.useRef(null);
+  const [carouselRef, api] = useEmblaCarousel(
+    {
+      axis: 'x',
+    },
+    plugin.current,
+  );
+
+  React.useEffect(() => {
+    if (api) {
+      api.on('select', () => {
+        // Reset and play the video if it's the active slide
+        const activeIndex = api.selectedScrollSnap();
+        const videoElement = videoRef.current;
+        if (videoElement && data[activeIndex]?.type === 'video') {
+          videoElement.play();
+        }
+      });
+    }
+  }, [api, data]);
+
+  const handleVideoEnd = () => {
+    if (plugin.current) {
+      plugin.current[0].play(); // Resume autoplay when the video ends
+    }
+  };
+
+  const handleVideoPlay = () => {
+    if (plugin.current) {
+      plugin.current[0].stop(); // Stop autoplay when the video starts playing
+    }
+  };
 
   return (
     <Carousel
@@ -190,15 +223,32 @@ export function CarouselPlugin({ data = [] }) {
             <div className="p-1">
               <Card className="rounded-none border-none">
                 <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <img
-                    src={`/images/HeroImages/${o?.src}`}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                    alt="Next.js Logo"
-                  />
+                  {o.type === 'video' ? (
+                    <video
+                      ref={videoRef}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                      autoPlay
+                      muted
+                      onPlay={handleVideoPlay}
+                      onEnded={handleVideoEnd}
+                    >
+                      <source src="/medias/eventVedio.mp4" type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      src={`/images/HeroImages/${o?.src}`}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                      alt="Next.js Logo"
+                    />
+                  )}
                   {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
                 </CardContent>
               </Card>

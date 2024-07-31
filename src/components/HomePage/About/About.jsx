@@ -9,16 +9,7 @@ import { slideUp, opacity, combinedVariants } from './animation';
 import styles from './style.module.scss';
 import Section from '@/components/Section/Section';
 
-const phrase = `Exinfo Solutions is an abode of creations, with a dedicated brain storming professionals
-delivering an exceptional exhibition experience globally.
-We endevour beyond design to facilitate our clients with the utmost solutions in every
-step of the way.
-We believe in nurturing a zealous culture of constant teamwork with a group of
-experienced creatives who have an eye for details.
-With a persistent harmony we put forth the graceful creations enabling our clients to
-scale up their success.
-Our high spirit and professionalism has made us to become a preferred company at Pan
-India Level and that we are proud of.`;
+const phrase = `At Exinfo Solutions, we pride ourselves on being a hub of innovation and creativity, delivering exceptional exhibition experiences across the globe. Our client-centric approach ensures that each project is tailored to meet unique goals, backed by our end-to-end services that cover everything from conceptualization to execution. We integrate cutting-edge technologies and sustainable practices into our designs, reflecting our commitment to both excellence and environmental responsibility. Our award-winning craftsmanship and global reach allow us to create captivating exhibits that resonate with diverse audiences. We foster strong, collaborative partnerships with clients and vendors, driven by our passionate team dedicated to continuous improvement and delivering outstanding results. Our dedication to nurturing a zealous culture of teamwork and creativity has established us as a preferred choice across Pan India and beyond, reflecting our high spirit and professionalism in every endeavor.`;
 
 function About() {
   const [selectedProject, setSelectedProject] = useState(0);

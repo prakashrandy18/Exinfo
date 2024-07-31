@@ -16,10 +16,10 @@ const imageVariant = {
 };
 
 const images = [
-  { src: 'hero1.jpg' },
-  { src: 'hero2.jpg' },
-  { src: 'hero3.jpg' },
+  // { src: 'hero1.jpg', type: 'image' },
+  { src: 'eventVedio.mp4', type: 'video' },
   { src: 'hero4.jpg' },
+  { src: 'hero2.jpg' },
   { src: 'hero5.jpg' },
 ];
 export default function HeroImage() {
@@ -75,7 +75,7 @@ export default function HeroImage() {
           </button>
         </motion.div>
       </Box>
-      <div className="w-full h-screen relative">
+      <div className="w-full mt-36 sm:h-600px md:h-screen relative">
         <CarouselPlugin data={images} />
       </div>
 
