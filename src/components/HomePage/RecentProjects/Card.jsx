@@ -11,9 +11,9 @@ const Card = ({
   src,
   url,
   color,
-  progress,
+  // progress,
   range,
-  targetScale,
+  // targetScale,
 }) => {
   const container = useRef(null);
   const { scrollXProgress } = useScroll({
@@ -21,22 +21,22 @@ const Card = ({
     offset: ['start end', 'start start'],
   });
 
-  const imageScale = useTransform(scrollXProgress, [0, 1], [2, 1]);
-  const scale = useTransform(progress, range, [1, targetScale]);
+  // const imageScale = useTransform(scrollXProgress, [0, 1], [2, 1]);
+  // const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
     <div ref={container} className={styles.cardContainer}>
       <motion.div
         style={{
-          backgroundColor: color,
-          scale,
+          // backgroundColor: color,
+          // scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
         className={styles.card}
       >
-        <h2>{title}</h2>
         <div className={styles.body}>
           <div className={styles.description}>
+            <h2>{title}</h2>
             <p>{description}</p>
             <button className="mt-8 px-6 py-2 border border-white text-white font-semibold rounded hover:cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
               See more{' '}
@@ -56,9 +56,8 @@ const Card = ({
               </svg>
             </button>
           </div>
-
           <div className={styles.imageContainer}>
-            <motion.div className={styles.inner} style={{ scale: imageScale }}>
+            <motion.div className={styles.inner} style={{}}>
               <Image fill src={`/images/recent-projects/${src}`} alt="image" />
             </motion.div>
           </div>

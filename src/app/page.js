@@ -33,9 +33,9 @@ export default function Home() {
         <HeroImage />
         {/* <VedioSection /> */}
         <About />
-        <NewRecentProjects />
-        {/* <ParallexRecentProjects />
-        <RecentProjects /> */}
+        {/* <NewRecentProjects /> */}
+        <ParallexRecentProjects />
+        {/* <RecentProjects /> */}
         <MetricsSection />
         {!isMobile && <Projects />}
         <BrandsSlider />
